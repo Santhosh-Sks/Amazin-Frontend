@@ -2,10 +2,9 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-// Set the base URL for axios.
-// In development, this will be undefined, and axios will use relative paths,
-// allowing the Vite proxy to work.
-// In production (Vercel), VITE_API_BASE_URL will be set, and axios will target the deployed backend.
+// This is the key line. It sets the base URL for all axios requests.
+// In production, it uses the Vercel environment variable.
+// In development, it's undefined, so the Vite proxy is used.
 axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
 
 const AuthContext = createContext(null);
@@ -196,5 +195,5 @@ export function useAuth() {
   if (!context) {
     throw new Error('useAuth must be used within AuthProvider');
   }
-    return context;
-  }
+  return context; 
+}
