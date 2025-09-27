@@ -22,14 +22,16 @@ export default function ProductCard({ product }) {
 
   async function handleBuyClick(e) {
     e.preventDefault();
+    
+    // 1. Open the new tab immediately. This is less likely to be blocked by pop-up blockers.
+    window.open(product.affiliateLink, '_blank', 'noopener,noreferrer');
+
+    // 2. Send the click tracking request in the background.
     try {
-      // Register the click with the backend using the correct 'asin' key
       await axios.post('/api/affiliate/click', { asin: product.affiliateLink });
     } catch (err) { 
-      // Ignore errors, the user should still be redirected
+      // Silently ignore errors, as the user has already been navigated.
     }
-    // Open the affiliate link in a new tab
-    window.open(product.affiliateLink, '_blank', 'noopener');
   }
 
   return (
@@ -56,6 +58,3 @@ export default function ProductCard({ product }) {
       {clicks !== null && (
         <div className="absolute top-3 right-3 text-[11px] bg-white/90 px-2 py-0.5 rounded-full text-gray-800 font-medium">{clicks} clicks</div>
       )}
-    </motion.div>
-    );
-  }
