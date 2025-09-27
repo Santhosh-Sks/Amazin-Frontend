@@ -1,36 +1,46 @@
-import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import axios from "axios";
 
 export default function ProductCard({ product }) {
   const [clicks, setClicks] = useState(null);
 
+  // Fetch click count when product loads
   useEffect(() => {
     let mounted = true;
     async function fetchCount() {
       try {
-        const res = await axios.get(`/api/affiliate/count?asin=${encodeURIComponent(product.affiliateLink)}`);
-        if (!mounted) return;
-        setClicks(res.data.count || 0);
+        const res = await axios.get(
+          `/api/affiliate/count?asin=${encodeURIComponent(product.affiliateLink)}`
+        );
+        if (mounted) {
+          setClicks(res.data.count || 0);
+        }
       } catch (e) {
-        // ignore errors for this non-critical feature
+        console.error("Failed to fetch count", e);
       }
     }
     fetchCount();
-    return () => { mounted = false; };
+    return () => {
+      mounted = false;
+    };
   }, [product]);
 
+  // Handle Buy button click
   async function handleBuyClick(e) {
     e.preventDefault();
-    
-    // 1. Open the new tab immediately. This is less likely to be blocked by pop-up blockers.
-    window.open(product.affiliateLink, '_blank', 'noopener,noreferrer');
 
-    // 2. Send the click tracking request in the background.
+    // Open the affiliate link in new tab (avoids popup blocking issues)
+    window.open(product.affiliateLink, "_blank", "noopener,noreferrer");
+
+    // Track click in background
     try {
-      await axios.post('/api/affiliate/click', { asin: product.affiliateLink });
-    } catch (err) { 
-      // Silently ignore errors, as the user has already been navigated.
+      await axios.post("/api/affiliate/click", {
+        asin: product.affiliateLink,
+      });
+      setClicks((prev) => (prev !== null ? prev + 1 : 1));
+    } catch (err) {
+      console.error("Click tracking failed", err);
     }
   }
 
@@ -40,12 +50,25 @@ export default function ProductCard({ product }) {
       whileTap={{ scale: 0.97 }}
       className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition p-4 border border-gray-100 flex flex-col relative overflow-hidden"
     >
+      {/* Product Image */}
       <div className="aspect-square overflow-hidden rounded-lg mb-4 relative bg-gray-50">
-        <img src={product.image} alt={product.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+        <img
+          src={product.image}
+          alt={product.title}
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+        />
       </div>
-      <h3 className="font-semibold text-gray-800 line-clamp-2 flex-1 group-hover:text-indigo-600 transition-colors">{product.title}</h3>
+
+      {/* Title */}
+      <h3 className="font-semibold text-gray-800 line-clamp-2 flex-1 group-hover:text-indigo-600 transition-colors">
+        {product.title}
+      </h3>
+
+      {/* Price + Buy Button */}
       <div className="mt-3 flex items-center justify-between">
-        <span className="text-lg font-bold text-indigo-600">${product.price}</span>
+        <span className="text-lg font-bold text-indigo-600">
+          ${product.price}
+        </span>
         <a
           href={product.affiliateLink}
           onClick={handleBuyClick}
@@ -54,7 +77,18 @@ export default function ProductCard({ product }) {
           Buy
         </a>
       </div>
-      <span className="absolute top-3 left-3 text-[10px] uppercase tracking-wide font-semibold bg-white/90 px-2 py-0.5 rounded-full text-indigo-600 shadow">Deal</span>
+
+      {/* Deal Badge */}
+      <span className="absolute top-3 left-3 text-[10px] uppercase tracking-wide font-semibold bg-white/90 px-2 py-0.5 rounded-full text-indigo-600 shadow">
+        Deal
+      </span>
+
+      {/* Click Count */}
       {clicks !== null && (
-        <div className="absolute top-3 right-3 text-[11px] bg-white/90 px-2 py-0.5 rounded-full text-gray-800 font-medium">{clicks} clicks</div>
+        <div className="absolute top-3 right-3 text-[11px] bg-white/90 px-2 py-0.5 rounded-full text-gray-800 font-medium">
+          {clicks} clicks
+        </div>
       )}
+    </motion.div>
+  );
+}
