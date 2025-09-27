@@ -2,9 +2,11 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-// Ensure axios targets the backend API during development. Set VITE_API_BASE in .env to override.
-const API_BASE = import.meta.env?.VITE_API_BASE || 'http://localhost:4000';
-axios.defaults.baseURL = API_BASE;
+// Set the base URL for axios.
+// In development, this will be undefined, and axios will use relative paths,
+// allowing the Vite proxy to work.
+// In production (Vercel), VITE_API_BASE_URL will be set, and axios will target the deployed backend.
+axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
 
 const AuthContext = createContext(null);
 const OTP_EXP_MIN = Number(import.meta.env?.VITE_OTP_EXP_MINUTES || 5);
@@ -194,5 +196,5 @@ export function useAuth() {
   if (!context) {
     throw new Error('useAuth must be used within AuthProvider');
   }
-  return context; 
-}
+    return context;
+  }
