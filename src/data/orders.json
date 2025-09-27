@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ORD-1001",
+    "productName": "Wireless Noise Cancelling Headphones",
+    "category": "Electronics",
+    "date": "2025-08-01",
+    "status": "Delivered"
+  },
+  {
+    "id": "ORD-1002",
+    "productName": "Smart Fitness Watch Pro",
+    "category": "Electronics",
+    "date": "2025-08-02",
+    "status": "Shipped"
+  },
+  {
+    "id": "ORD-1003",
+    "productName": "Men's Casual Sneakers",
+    "category": "Fashion",
+    "date": "2025-08-03",
+    "status": "Processing"
+  },
+  {
+    "id": "ORD-1004",
+    "productName": "Ceramic Plant Pot Set",
+    "category": "Home",
+    "date": "2025-08-04",
+    "status": "Delivered"
+  },
+  {
+    "id": "ORD-1005",
+    "productName": "Best-Selling Productivity Book",
+    "category": "Books",
+    "date": "2025-08-05",
+    "status": "Delivered"
+  },
+  {
+    "id": "ORD-1006",
+    "productName": "Ultra Soft Throw Blanket",
+    "category": "Home",
+    "date": "2025-08-06",
+    "status": "Shipped"
+  }
+]
