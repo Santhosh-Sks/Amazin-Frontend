@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import axios from 'axios';
 
 export default function ProductCard({ product }) {
   const [clicks, setClicks] = useState(null);
@@ -8,14 +9,11 @@ export default function ProductCard({ product }) {
     let mounted = true;
     async function fetchCount() {
       try {
-        const res = await fetch(`/api/affiliate/count?asin=${encodeURIComponent(product.affiliateLink)}`);
+        const res = await axios.get(`/api/affiliate/count?asin=${encodeURIComponent(product.affiliateLink)}`);
         if (!mounted) return;
-        if (res.ok) {
-          const json = await res.json();
-          setClicks(json.count || 0);
-        }
+        setClicks(res.data.count || 0);
       } catch (e) {
-        // ignore
+        // ignore errors for this non-critical feature
       }
     }
     fetchCount();
@@ -25,10 +23,12 @@ export default function ProductCard({ product }) {
   async function handleBuyClick(e) {
     e.preventDefault();
     try {
-      // register the click with backend
-      await fetch('/api/affiliate/click', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ link: product.affiliateLink }) });
-    } catch (err) { /* ignore */ }
-    // open affiliate link
+      // Register the click with the backend using the correct 'asin' key
+      await axios.post('/api/affiliate/click', { asin: product.affiliateLink });
+    } catch (err) { 
+      // Ignore errors, the user should still be redirected
+    }
+    // Open the affiliate link in a new tab
     window.open(product.affiliateLink, '_blank', 'noopener');
   }
 
@@ -57,5 +57,5 @@ export default function ProductCard({ product }) {
         <div className="absolute top-3 right-3 text-[11px] bg-white/90 px-2 py-0.5 rounded-full text-gray-800 font-medium">{clicks} clicks</div>
       )}
     </motion.div>
-  );
-}
+    );
+  }
