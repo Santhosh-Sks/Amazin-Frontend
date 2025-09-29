@@ -5,7 +5,13 @@ import axios from 'axios';
 // This is the key line. It sets the base URL for all axios requests.
 // In production, it uses the Vercel environment variable.
 // In development, it's undefined, so the Vite proxy is used.
-axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
+const isDevelopment = import.meta.env.DEV;
+axios.defaults.baseURL = isDevelopment ? undefined : import.meta.env.VITE_API_BASE_URL;
+
+// Debug environment setup in development
+if (isDevelopment) {
+  console.log('Development mode - using Vite proxy for API calls');
+}
 
 const AuthContext = createContext(null);
 const OTP_EXP_MIN = Number(import.meta.env?.VITE_OTP_EXP_MINUTES || 5);
@@ -21,6 +27,13 @@ export function AuthProvider({ children }) {
   const [otpInput, setOtpInput] = useState('');
   const [timeLeft, setTimeLeft] = useState(0);
   const [adminLoginAttempt, setAdminLoginAttempt] = useState(false);
+
+  // Track stage changes for debugging
+  useEffect(() => {
+    if (isDevelopment) {
+      console.log('AuthContext stage changed to:', stage);
+    }
+  }, [stage]);
 
   // ensure axios has auth header when token exists
   useEffect(() => {
@@ -98,10 +111,15 @@ export function AuthProvider({ children }) {
     setLoading(true);
     
     try {
-      await axios.post('/api/auth/register', { email, password, name });
+      const response = await axios.post('/api/auth/register', { email, password, name });
+      
+      // Only set stage to OTP verification if the API call was successful
+      // This prevents navigating to OTP stage when there are errors (like email already exists)
       setStage('otp');
       setOtpEmail(email);
       setTimeLeft(OTP_EXP_MIN * 60);
+      
+      // Start countdown timer
       const id = setInterval(() => 
         setTimeLeft(t => { 
           if (t <= 1) { 
@@ -110,9 +128,16 @@ export function AuthProvider({ children }) {
           } 
           return t - 1; 
         }), 1000);
+        
       return { ok: true };
     } catch (e) {
-      const err = e?.response?.data?.error || 'Register failed';
+      // Reset to credentials stage and clear OTP-related state when there's an error
+      setStage('credentials');
+      setOtpEmail(null);
+      setOtpInput('');
+      setTimeLeft(0);
+      
+      const err = e?.response?.data?.error || e?.response?.data?.message || 'Registration failed';
       setError(err);
       return { ok: false, error: err };
     } finally { 
@@ -155,6 +180,14 @@ export function AuthProvider({ children }) {
     }
   }
 
+  function resetRegistrationState() {
+    setStage('credentials');
+    setOtpEmail(null);
+    setOtpInput('');
+    setTimeLeft(0);
+    setError(null);
+  }
+
   async function logout() {
     setToken(null);
     setUser(null);
@@ -182,6 +215,7 @@ export function AuthProvider({ children }) {
       timeLeft,
       otpEmail,
       logout,
+      resetRegistrationState,
       isAdmin: user?.role === 'admin',
       isLoggedIn: !!token
     }}>
