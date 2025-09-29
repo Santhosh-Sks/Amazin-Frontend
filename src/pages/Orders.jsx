@@ -36,7 +36,7 @@ export default function Orders() {
             </div>
             <h3 className="font-semibold text-sm flex-1 group-hover:text-indigo-600 transition-colors">{p.title}</h3>
             <div className="mt-2 flex items-center justify-between">
-              <span className="text-indigo-600 font-bold text-sm">${p.price}</span>
+              <span className="text-indigo-600 font-bold text-sm">Rs {p.price}</span>
               <button onClick={()=>addToCart(p)} className="text-xs px-3 py-1.5 rounded-md bg-indigo-600 text-white hover:bg-indigo-700">Add</button>
             </div>
             <span className="absolute top-3 left-3 text-[10px] uppercase tracking-wide font-semibold bg-white/90 px-2 py-0.5 rounded-full text-indigo-600 shadow">Deal</span>
@@ -48,7 +48,7 @@ export default function Orders() {
           <h2 className="font-semibold mb-4">Cart ({cart.length})</h2>
           {cart.length===0 && <p className="text-sm text-gray-500">No items.</p>}
           <ul className="space-y-2 text-sm">
-            {cart.map((c,i)=>(<li key={i} className="flex justify-between border-b pb-1 last:border-0"><span>{c.title.slice(0,28)}...</span><span>${c.price}</span></li>))}
+            {cart.map((c,i)=>(<li key={i} className="flex justify-between border-b pb-1 last:border-0"><span>{c.title.slice(0,28)}...</span><span>Rs {c.price}</span></li>))}
           </ul>
           <button disabled={!cart.length} onClick={placeOrder} className="mt-4 w-full py-2.5 rounded-md font-medium bg-green-600 disabled:opacity-40 text-white hover:bg-green-700">Place Order</button>
         </div>

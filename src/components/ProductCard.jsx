@@ -67,7 +67,7 @@ export default function ProductCard({ product }) {
       {/* Price + Buy Button */}
       <div className="mt-3 flex items-center justify-between">
         <span className="text-lg font-bold text-indigo-600">
-          ${product.price}
+          Rs {product.price}
         </span>
         <a
           href={product.affiliateLink}

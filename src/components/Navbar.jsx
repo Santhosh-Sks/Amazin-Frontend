@@ -24,7 +24,7 @@ export default function Navbar(){
   const avatarLetter = user ? ((user.name && user.name.trim()[0]) || user.email[0]).toUpperCase() : null;
 
   return (
-    <header className="backdrop-blur-md bg-white/60 border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+    <header className="bg-white md:backdrop-blur-md md:bg-white/80 border-b border-gray-200 sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4 h-16 md:h-20">
 
@@ -45,7 +45,7 @@ export default function Navbar(){
             </motion.button>
           </div>
 
-          {/* Center: Search (prominent) */}
+          {/* Center: Search (prominent on desktop, hidden on mobile) */}
           <div className="hidden md:flex flex-1 items-center justify-center">
             <div className="w-full max-w-2xl">
               <div className="relative">
@@ -112,8 +112,8 @@ export default function Navbar(){
       {/* Mobile menu overlay */}
       <AnimatePresence>
         {menuOpen && (
-          <motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }} className="fixed inset-0 z-40 bg-black/40">
-            <motion.aside initial={{ x: '-100%' }} animate={{ x: 0 }} exit={{ x: '-100%' }} className="w-80 max-w-full bg-white h-full p-6">
+          <motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }} className="fixed inset-0 z-40 bg-black/50">
+            <motion.aside initial={{ x: '-100%' }} animate={{ x: 0 }} exit={{ x: '-100%' }} className="w-80 max-w-full bg-white shadow-2xl h-full p-6 border-r border-gray-200">
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-3">
                   <img src="/avatar.png" className="h-10 w-10 rounded-full" alt="logo" />
@@ -127,9 +127,21 @@ export default function Navbar(){
                 </button>
               </div>
 
-              <nav className="flex flex-col gap-2">
+              {/* Mobile Search */}
+              <div className="mb-6">
+                <div className="relative">
+                  <input placeholder="Search products..." className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-indigo-500 outline-none" />
+                  <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-indigo-600 text-white px-3 py-1.5 rounded-md text-sm hover:bg-indigo-700">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <nav className="flex flex-col gap-1">
                 {navLinks.map(l => (
-                  <Link key={l.to} to={l.to} onClick={()=>setMenuOpen(false)} className="py-3 px-2 rounded hover:bg-gray-50 font-medium">{l.label}</Link>
+                  <Link key={l.to} to={l.to} onClick={()=>setMenuOpen(false)} className="py-4 px-4 rounded-lg hover:bg-gray-50 font-medium text-gray-700 hover:text-indigo-600 transition-colors border-b border-gray-100 last:border-b-0">{l.label}</Link>
                 ))}
               </nav>
 
