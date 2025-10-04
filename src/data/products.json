@@ -114,32 +114,33 @@
     "category": "Shoes",
     "company": "ASIAN",
     "image": "https://m.media-amazon.com/images/I/71Yy2h4Q8kL._SX500_.jpg",
-    "affiliateLink": "https://amzn.in/d/1mQhW3K",
+    "affiliateLink": "https://www.amazon.in/dp/B01N54ZM9W/ref=cm_sw_r_as_gl_apa_gl_i_dl_KGS6PB8848WN693H4AZK?linkCode=ml1&tag=amazinmart-21&linkId=416ecaa59689a47e47a28bcdb3bf3af1&th=1&psc=1",
     "description": "ASIAN Men's WNDR-13 Sports Running Shoes - Lightweight, mesh upper, memory foam insole for cushioning.",
     "rating": 4.1
   },
-  {
-    "id": 11,
-    "title": "SPARX Men Lace Up Running Shoes",
-    "price": 1087.0,
-    "currency": "INR",
-    "category": "Shoes",
-    "company": "SPARX",
-    "image": "https://m.media-amazon.com/images/I/713Q74vE+OL._SX500_.jpg",
-    "affiliateLink": "https://amzn.in/d/d4s8g3v",
-    "description": "SPARX Men's Lace-Up Running Shoes with comfortable cushioning and stylish design."
-  },
-  {
-    "id": 12,
-    "title": "ASIAN Men's Wonder Sports Running,Walking & Gym Shoes with Casual Sneaker Lightweight Lace-Up Shoes for Men's Delta-20",
-    "price": 799.0,
-    "currency": "INR",
-    "category": "Shoes",
-    "company": "ASIAN",
-    "image": "https://m.media-amazon.com/images/I/61H+Vp1Fv5L._SX500_.jpg",
-    "affiliateLink": "https://amzn.in/d/3jL7f8t",
-    "description": "ASIAN Delta-20 series shoes for multiple activities (Running, Walking, Gym) - Lightweight and Lace-Up closure."
-  },
+{
+  "id": 11,
+  "title": "SPARX Men Lace Up Running Shoes",
+  "price": 1087.0,
+  "currency": "INR",
+  "category": "Shoes",
+  "company": "SPARX",
+  "image": "https://m.media-amazon.com/images/I/713Q74vE+OL._SX500_.jpg",
+  "affiliateLink": "https://www.amazon.in/dp/B09WLNFL7H/ref=cm_sw_r_as_gl_apa_gl_i_dl_SNMEVSPKNWD6M8QD8BNX?linkCode=ml1&tag=amazinmart-21&linkId=36d09982ead96ef6993e53160e8c04a8&th=1&psc=1",
+  "description": "SPARX Men's Lace-Up Running Shoes with comfortable cushioning and stylish design."
+},
+  
+{
+  "id": 12,
+  "title": "ASIAN Men's Wonder Sports Running,Walking & Gym Shoes with Casual Sneaker Lightweight Lace-Up Shoes for Men's Delta-20",
+  "price": 799.0,
+  "currency": "INR",
+  "category": "Shoes",
+  "company": "ASIAN",
+  "image": "https://m.media-amazon.com/images/I/61H+Vp1Fv5L._SX500_.jpg",
+  "affiliateLink": "https://www.amazon.in/dp/B0DHGM4YTL/ref=cm_sw_r_as_gl_apa_gl_i_dl_0NXFHANGVKSMYQS4HSXA?linkCode=ml1&tag=amazinmart-21&linkId=2d0322de62ae115c2c8d599c7edbd138&th=1&psc=1",
+  "description": "ASIAN Delta-20 series shoes for multiple activities (Running, Walking, Gym) - Lightweight and Lace-Up closure."
+},
   {
     "id": 13,
     "title": "BRUTON EVA Lite Sport Shoes Running Shoes for Men - Grey",
@@ -148,7 +149,7 @@
     "category": "Shoes",
     "company": "BRUTON",
     "image": "https://m.media-amazon.com/images/I/61b7b7p5G+L._SX500_.jpg",
-    "affiliateLink": "https://amzn.in/d/6jC9h3R",
+    "affiliateLink": "https://www.amazon.in/dp/B07HL4CF4R/ref=cm_sw_r_as_gl_apa_gl_i_dl_3ZCWB21HFXF2QYPPDGXS?linkCode=ml1&tag=amazinmart-21&linkId=d74d1b05f85639aadb33df9d5b63b01c",
     "description": "BRUTON EVA Lite Sport Shoes - Lightweight running shoe with EVA sole and grey design."
   }
 ]
