@@ -106,7 +106,7 @@
     "description": "SPARX Mens Sx0846g Sneaker — casual sport sneaker.",
     "priceNote": "Price scraped from the Amazon listing; confirm before publishing."
   },
-  {
+    {
     "id": 10,
     "title": "ASIAN Men's Wonder-13 Sports Running Shoes",
     "price": 599.0,
@@ -118,29 +118,28 @@
     "description": "ASIAN Men's WNDR-13 Sports Running Shoes - Lightweight, mesh upper, memory foam insole for cushioning.",
     "rating": 4.1
   },
-{
-  "id": 11,
-  "title": "SPARX Men Lace Up Running Shoes",
-  "price": 1087.0,
-  "currency": "INR",
-  "category": "Shoes",
-  "company": "SPARX",
-  "image": "https://m.media-amazon.com/images/I/713Q74vE+OL._SX500_.jpg",
-  "affiliateLink": "https://www.amazon.in/dp/B09WLNFL7H/ref=cm_sw_r_as_gl_apa_gl_i_dl_SNMEVSPKNWD6M8QD8BNX?linkCode=ml1&tag=amazinmart-21&linkId=36d09982ead96ef6993e53160e8c04a8&th=1&psc=1",
-  "description": "SPARX Men's Lace-Up Running Shoes with comfortable cushioning and stylish design."
-},
-  
-{
-  "id": 12,
-  "title": "ASIAN Men's Wonder Sports Running,Walking & Gym Shoes with Casual Sneaker Lightweight Lace-Up Shoes for Men's Delta-20",
-  "price": 799.0,
-  "currency": "INR",
-  "category": "Shoes",
-  "company": "ASIAN",
-  "image": "https://m.media-amazon.com/images/I/61H+Vp1Fv5L._SX500_.jpg",
-  "affiliateLink": "https://www.amazon.in/dp/B0DHGM4YTL/ref=cm_sw_r_as_gl_apa_gl_i_dl_0NXFHANGVKSMYQS4HSXA?linkCode=ml1&tag=amazinmart-21&linkId=2d0322de62ae115c2c8d599c7edbd138&th=1&psc=1",
-  "description": "ASIAN Delta-20 series shoes for multiple activities (Running, Walking, Gym) - Lightweight and Lace-Up closure."
-},
+  {
+    "id": 11,
+    "title": "SPARX Men Lace Up Running Shoes",
+    "price": 1087.0,
+    "currency": "INR",
+    "category": "Shoes",
+    "company": "SPARX",
+    "image": "https://m.media-amazon.com/images/I/713Q74vE+OL._SX500_.jpg",
+    "affiliateLink": "https://www.amazon.in/dp/B09WLNFL7H/ref=cm_sw_r_as_gl_apa_gl_i_dl_SNMEVSPKNWD6M8QD8BNX?linkCode=ml1&tag=amazinmart-21&linkId=36d09982ead96ef6993e53160e8c04a8&th=1&psc=1",
+    "description": "SPARX Men's Lace-Up Running Shoes with comfortable cushioning and stylish design."
+  },
+  {
+    "id": 12,
+    "title": "ASIAN Men's Wonder Sports Running,Walking & Gym Shoes with Casual Sneaker Lightweight Lace-Up Shoes for Men's Delta-20",
+    "price": 799.0,
+    "currency": "INR",
+    "category": "Shoes",
+    "company": "ASIAN",
+    "image": "https://m.media-amazon.com/images/I/61H+Vp1Fv5L._SX500_.jpg",
+    "affiliateLink": "https://www.amazon.in/dp/B0DHGM4YTL/ref=cm_sw_r_as_gl_apa_gl_i_dl_0NXFHANGVKSMYQS4HSXA?linkCode=ml1&tag=amazinmart-21&linkId=2d0322de62ae115c2c8d599c7edbd138&th=1&psc=1",
+    "description": "ASIAN Delta-20 series shoes for multiple activities (Running, Walking, Gym) - Lightweight and Lace-Up closure."
+  },
   {
     "id": 13,
     "title": "BRUTON EVA Lite Sport Shoes Running Shoes for Men - Grey",
