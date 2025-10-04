@@ -1,5 +1,4 @@
 [
- 
   {
     "id": 1,
     "title": "Zapcase Back Case Cover (Slim Protective Back Cover)",
@@ -109,46 +108,47 @@
   },
   {
     "id": 10,
-    "title": "Wireless Bluetooth Headphones",
-    "price": 2499.0,
+    "title": "ASIAN Men's Wonder-13 Sports Running Shoes",
+    "price": 599.0,
     "currency": "INR",
-    "category": "Electronics",
-    "company": "Generic",
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500",
-    "affiliateLink": "https://amzn.to/3KTEe0R",
-    "description": "Premium wireless Bluetooth headphones with noise cancellation and long battery life."
+    "category": "Shoes",
+    "company": "ASIAN",
+    "image": "https://m.media-amazon.com/images/I/71Yy2h4Q8kL._SX500_.jpg",
+    "affiliateLink": "https://amzn.in/d/1mQhW3K",
+    "description": "ASIAN Men's WNDR-13 Sports Running Shoes - Lightweight, mesh upper, memory foam insole for cushioning.",
+    "rating": 4.1
   },
   {
     "id": 11,
-    "title": "Smart Fitness Watch",
-    "price": 4999.0,
+    "title": "SPARX Men Lace Up Running Shoes",
+    "price": 1087.0,
     "currency": "INR",
-    "category": "Electronics",
-    "company": "Generic",
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
-    "affiliateLink": "https://amzn.to/3ISpf6S",
-    "description": "Advanced fitness tracker with heart rate monitoring and GPS tracking."
+    "category": "Shoes",
+    "company": "SPARX",
+    "image": "https://m.media-amazon.com/images/I/713Q74vE+OL._SX500_.jpg",
+    "affiliateLink": "https://amzn.in/d/d4s8g3v",
+    "description": "SPARX Men's Lace-Up Running Shoes with comfortable cushioning and stylish design."
   },
   {
     "id": 12,
-    "title": "Portable Power Bank",
-    "price": 1999.0,
+    "title": "ASIAN Men's Wonder Sports Running,Walking & Gym Shoes with Casual Sneaker Lightweight Lace-Up Shoes for Men's Delta-20",
+    "price": 799.0,
     "currency": "INR",
-    "category": "Electronics",
-    "company": "Generic",
-    "image": "https://images.unsplash.com/photo-1609592867780-8340998b5c5d?w=500",
-    "affiliateLink": "https://amzn.to/3KEtOlH",
-    "description": "High-capacity portable power bank with fast charging support."
+    "category": "Shoes",
+    "company": "ASIAN",
+    "image": "https://m.media-amazon.com/images/I/61H+Vp1Fv5L._SX500_.jpg",
+    "affiliateLink": "https://amzn.in/d/3jL7f8t",
+    "description": "ASIAN Delta-20 series shoes for multiple activities (Running, Walking, Gym) - Lightweight and Lace-Up closure."
   },
   {
     "id": 13,
-    "title": "Wireless Gaming Mouse",
-    "price": 1499.0,
+    "title": "BRUTON EVA Lite Sport Shoes Running Shoes for Men - Grey",
+    "price": 495.0,
     "currency": "INR",
-    "category": "Electronics",
-    "company": "Generic",
-    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500",
-    "affiliateLink": "https://amzn.to/478BPIu",
-    "description": "Precision wireless gaming mouse with RGB lighting and customizable buttons."
+    "category": "Shoes",
+    "company": "BRUTON",
+    "image": "https://m.media-amazon.com/images/I/61b7b7p5G+L._SX500_.jpg",
+    "affiliateLink": "https://amzn.in/d/6jC9h3R",
+    "description": "BRUTON EVA Lite Sport Shoes - Lightweight running shoe with EVA sole and grey design."
   }
 ]
