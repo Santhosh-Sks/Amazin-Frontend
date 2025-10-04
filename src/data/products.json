@@ -106,5 +106,49 @@
     "affiliateLink": "https://amzn.in/d/1me9NhG",
     "description": "SPARX Mens Sx0846g Sneaker — casual sport sneaker.",
     "priceNote": "Price scraped from the Amazon listing; confirm before publishing."
+  },
+  {
+    "id": 10,
+    "title": "Wireless Bluetooth Headphones",
+    "price": 2499.0,
+    "currency": "INR",
+    "category": "Electronics",
+    "company": "Generic",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500",
+    "affiliateLink": "https://amzn.to/3KTEe0R",
+    "description": "Premium wireless Bluetooth headphones with noise cancellation and long battery life."
+  },
+  {
+    "id": 11,
+    "title": "Smart Fitness Watch",
+    "price": 4999.0,
+    "currency": "INR",
+    "category": "Electronics",
+    "company": "Generic",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
+    "affiliateLink": "https://amzn.to/3ISpf6S",
+    "description": "Advanced fitness tracker with heart rate monitoring and GPS tracking."
+  },
+  {
+    "id": 12,
+    "title": "Portable Power Bank",
+    "price": 1999.0,
+    "currency": "INR",
+    "category": "Electronics",
+    "company": "Generic",
+    "image": "https://images.unsplash.com/photo-1609592867780-8340998b5c5d?w=500",
+    "affiliateLink": "https://amzn.to/3KEtOlH",
+    "description": "High-capacity portable power bank with fast charging support."
+  },
+  {
+    "id": 13,
+    "title": "Wireless Gaming Mouse",
+    "price": 1499.0,
+    "currency": "INR",
+    "category": "Electronics",
+    "company": "Generic",
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500",
+    "affiliateLink": "https://amzn.to/478BPIu",
+    "description": "Precision wireless gaming mouse with RGB lighting and customizable buttons."
   }
 ]
