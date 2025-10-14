@@ -20,5 +20,41 @@
     "image": "https://m.media-amazon.com/images/I/710SxepIfiL._SL1500_.jpg",
     "affiliateLink": "https://amzn.to/4q5U6h2",
     "description": "Durable PVC-coated hex dumbbells (5kg x 2) with anti-roll design and ergonomic grip. Perfect for home workouts and strength training."
-  }
+  },
+  {
+  "id": 3,
+  "title": "Nova NHT 1074 USB Cordless Beard Trimmer for Men (Black)",
+  "price": 439,
+  "currency": "INR",
+  "category": "Personal Care",
+  "company": "Nova",
+  "image": "https://m.media-amazon.com/images/I/51FV1CDiQtS._SX679_.jpg",
+  "affiliateLink": "https://amzn.to/4h5Q2cw",
+  "description": "Cordless rechargeable trimmer with 30-minute runtime, 3 stubble guide combs (3mm–9mm), self-sharpening stainless steel blades, and USB charging. Lightweight, portable, and waterproof—ideal for beard grooming."
+},
+  {
+  "id": 4,
+  "title": "MI Xiaomi Grooming Kit (All-In-One Trimmer)",
+  "price": 1599,
+  "currency": "INR",
+  "category": "Personal Care",
+  "company": "MI",
+  "image": "https://m.media-amazon.com/images/I/51FV1CDiQtS._SX679_.jpg",
+  "affiliateLink": "https://amzn.to/490mPh1",
+  "description": "All-in-one grooming kit with 40 length settings, 0.5mm precision, USB Type-C fast charging, and 90-minute runtime. Includes beard combs, nose & ear trimmer, precision blade, and body grooming attachments. Ergonomic, waterproof, and ideal for full-body styling."
+},
+  {
+  "id": 5,
+  "title": "Bombay Shaving Company Power Play NXT Trimmer for Men",
+  "price": 649,
+  "currency": "INR",
+  "category": "Personal Care",
+  "company": "Bombay Shaving Company",
+  "image": "https://m.media-amazon.com/images/I/71z92uKGtsL._SX679_.jpg",
+  "affiliateLink": "https://amzn.to/4nO4CrE",
+  "description": "Rechargeable beard trimmer with 90-minute runtime, Type-C fast charging, and self-sharpening stainless steel blades. Includes 6 color-coded comb attachments (1–12mm), detachable blades for easy cleaning, and ergonomic design. Ideal for beard, mustache, neck grooming."
+}
+
+
+
 ]
