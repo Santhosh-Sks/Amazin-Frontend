@@ -56,7 +56,7 @@
 },
   {
   "id": 6,
-  "title": "Puma Unisex-Adult Softride Frequence Street Running Shoe (Black-Glacial Gray, 9UK)",
+  "title": "Puma Unisex-Adult Softride Frequence Street Running Shoe",
   "price": 2449,
   "currency": "INR",
   "category": "Shoes",
@@ -64,7 +64,91 @@
   "image": "https://m.media-amazon.com/images/I/51FgUnfqMKL._SY535_.jpg",
   "affiliateLink": "https://amzn.to/4qctJ9g",
   "description": "Stylish running shoe with SOFTRIDE cushioning and SOFTFOAM+ sockliner for all-day comfort. Features a textile upper, lace-up closure, and zoned rubber outsole for traction. Designed for neutral pronation and casual wear."
+},
+  {
+  "id": 7,
+  "title": "BRUTON EVA Lite Sport Shoes Running Shoes for Men - Grey",
+  "price": 445,
+  "currency": "INR",
+  "category": "Shoes",
+  "company": "BRUTON",
+  "image": "https://m.media-amazon.com/images/I/61VHvg7wvCL._SY535_.jpg",
+  "affiliateLink": "https://amzn.to/3L0Ga8d",
+  "description": "Lightweight EVA sport shoes with synthetic leather upper and lace-up closure. Designed for running, walking, gym, and daily wear. Breathable, washable, and built for comfort with a stylish, versatile look."
+},
+  {
+  "id": 8,
+  "title": "BRUTON EVA Lite Sport Shoes Running Shoes for Men - Blue",
+  "price": 445,
+  "currency": "INR",
+  "category": "Shoes",
+  "company": "BRUTON",
+  "image": "https://m.media-amazon.com/images/I/71f3BmjCwtL._SY500_.jpg",
+  "affiliateLink": "https://amzn.to/4hw03jF",
+  "description": "Versatile EVA sport shoes with synthetic leather upper and lace-up closure. Ideal for gym, jogging, walking, and daily wear. Washable, lightweight, and designed for comfort with a trendy look."
+},
+  {
+  "id": 9,
+  "title": "ASIAN Men's Wonder-13 Sports Running Shoes - Grey",
+  "price": 599,
+  "currency": "INR",
+  "category": "Shoes",
+  "company": "ASIAN",
+  "image": "https://m.media-amazon.com/images/I/616zTSviLpL._SY500_.jpg",
+  "affiliateLink": "https://amzn.to/49jSn1x",
+  "description": "Lightweight and breathable running shoes with mesh upper and EVA sole. Designed for comfort with shockproof cushioning, non-slip grip, and flexible walk support. Ideal for sports, gym, and daily wear."
+},
+  {
+  "id": 10,
+  "title": "Vasukie Salt & Pepper Square Glass Spice Jar with Black Sifter Cap (120ml, Pack of 4)",
+  "price": 129,
+  "currency": "INR",
+  "category": "Kitchen",
+  "company": "Vasukie",
+  "image": "https://m.media-amazon.com/images/I/71mu3EXVaSL._SL1476_.jpg",
+  "affiliateLink": "https://amzn.to/3JnLfGU",
+  "description": "Set of 4 square glass spice jars with dual-sided black sifter caps—standard shaker holes on one side, pour spout on the other. Airtight, BPA-free, lead-free glass ideal for storing salt, pepper, masalas, and other siftable spices. Compact 120ml capacity with stylish design for modern kitchens."
+},
+  {
+  "id": 11,
+  "title": "Ganesh Spark Gas Lighter for Kitchen Use",
+  "price": 87,
+  "currency": "INR",
+  "category": "Kitchen",
+  "company": "Ganesh",
+  "image": "https://m.media-amazon.com/images/I/61A2OYtJ3OL._SL1500_.jpg",
+  "affiliateLink": "https://amzn.to/4oG1Btz",
+  "description": "Stainless steel gas lighter with ergonomic grip, rust-proof body, and long-lasting spark mechanism. Ideal for daily kitchen use in homes and restaurants. Compact, easy to clean, and built for durability."
+},
+  {
+  "id": 12,
+  "title": "Fitness Mantra® 12 Pairs Sports Ankle Cotton Socks | Free Size | Multicolor",
+  "price": 189,
+  "currency": "INR",
+  "category": "Clothing",
+  "company": "Fitness Mantra",
+  "image": "https://m.media-amazon.com/images/I/81SEVBzTWhL._SL1500_.jpg",
+  "affiliateLink": "https://amzn.to/47r6ZcY",
+  "description": "Pack of 12 breathable cotton ankle socks in assorted colors. Designed for daily use with cushioned soles, snug fit, and low-cut profile for airflow. Ideal for sports, gym, and casual wear. #1 Best Seller in Men's Athletic Socks."
+},
+  {
+  "id": 13,
+  "title": "SJeware Polyester 5 Pairs Stripped Ankle Length Socks for Men & Women, Multicolor, Pack of 5, Free Size",
+  "price": 118,
+  "currency": "INR",
+  "category": "Clothing",
+  "company": "SJeware",
+  "image": "https://m.media-amazon.com/images/I/51E7JEfjMdL._SX522_.jpg",
+  "affiliateLink": "https://amzn.to/4qtoHVS",
+  "description": "Pack of 5 ankle-length socks made from a polycotton blend (60% cotton, 37% polyester, 3% spandex). Designed for comfort with moisture-wicking, arch support, and reinforced heel and toe. Lightweight, breathable, and machine washable—ideal for daily wear with boots or athletic shoes."
 }
+
+
+
+
+
+
+
 
 
 
