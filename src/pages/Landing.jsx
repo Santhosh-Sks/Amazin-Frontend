@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import home from "./pages/Home";
 
 function Landing() {
   return (
@@ -27,7 +28,7 @@ function Landing() {
           </p>
 
           <div className="flex gap-4">
-            <Link to="/shop">
+            <Link to="/home">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
