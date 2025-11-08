@@ -28,7 +28,7 @@ function Landing() {
           </p>
 
           <div className="flex gap-4">
-            <Link to="/home">
+            <Link to="/shop">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
